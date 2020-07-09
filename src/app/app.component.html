@@ -1,0 +1,10 @@
+<h1>Вот это да</h1>
+<label>Введите имя и я его запомню: </label>
+
+<input [(ngModel)]="name" placeholder="Имя">
+<button class="btn btn-default" (click)="addItem(name)">Добавить</button>
+<p>Добро пожаловать {{name}}</p>
+
+<hr>
+<h3>Все имена: </h3>
+<p *ngFor="let item of names">{{item}}</p>
